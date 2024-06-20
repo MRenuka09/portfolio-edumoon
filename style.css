@@ -1,0 +1,199 @@
+/* Reset and Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #2c3e50; /* Dark teal background */
+    color: #fff;
+    padding: 1em 20px; /* Add padding to header for spacing */
+}
+
+header h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: right; /* Align navigation links to the right */
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav ul li:first-child {
+    margin-left: 0; /* Remove margin for the first navigation item */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #1abc9c; /* Teal hover color */
+}
+
+.section {
+    padding: 40px 20px; /* Added padding-left and padding-right for sections */
+    background-color: #fff;
+}
+
+.section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333; /* Dark text color */
+}
+
+.section p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #666; /* Medium gray text color */
+    text-align: left; /* Align paragraph text to the left */
+}
+
+.project {
+    background: #ecf0f1; /* Light gray project background */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.project h3 {
+    margin-top: 0;
+    color: #333; /* Dark text color */
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Align skills list items to the left */
+    padding-left: 0;
+    list-style: none;
+}
+
+.skills-list li {
+    background-color: #3498db; /* Teal skills background */
+    color: #fff;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 4px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.contact-form textarea {
+    height: 150px;
+}
+
+.contact-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #2c3e50; /* Dark teal button background */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+.contact-form button:hover {
+    background-color: #1abc9c; /* Teal hover color */
+}
+
+.form-message {
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.form-message.success {
+    background-color: #d4edda; /* Light green success message */
+    color: #155724; /* Dark green text color */
+}
+
+.form-message.error {
+    background-color: #f8d7da; /* Light red error message */
+    color: #721c24; /* Dark red text color */
+}
+
+footer {
+    background-color: #2c3e50; /* Dark teal footer background */
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px; /* Add horizontal padding for footer content */
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    nav ul {
+        text-align: center; /* Center-align navigation links on small screens */
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .section h2 {
+        font-size: 2em;
+    }
+
+    .contact-form {
+        padding: 20px;
+    }
+}
